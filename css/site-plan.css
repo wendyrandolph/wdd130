@@ -27,20 +27,20 @@ h4,
 h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
-  color:var(--primary-color) ;
+  color: var(--primary-color);
 }
 header {
   padding: 1em;
   text-align: center;
   color: var(--accent2-color);
-  background-color: E30D81 ;
+  background-color: var(--accent2-color);
 }
 header > h1 {
   color: ;
 }
 p {
   font-family: 'Roboto-Slab', serif;
-  color: ;
+  color: #54494b ;
   padding: 1em;
 }
 .colors {
