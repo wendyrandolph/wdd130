@@ -1,0 +1,100 @@
+:root {
+    --primary-color: #54494b;
+    --secondary-color: #B33951;
+    --accent1-color: #91C7B1;
+    --accent2-color: #F1F7ED;
+    --heading-font: 'Montserrat'sans-serif;
+    --paragraph-family: 'Roboto Slab', serif;
+    --heading-font-color: #B33951;
+}
+
+html {
+    background-color: #91C7B1;
+}
+
+body {
+    max-width: 900px; 
+    margin: 0 auto; 
+    background-color: #F1F7ED;
+    padding: 1em;
+}
+
+header,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--accent2-color);
+}
+
+header>h1 {
+    color: #54494b
+}
+
+p {
+    font-family: 'Roboto-Slab', serif;
+    color: #54494b;
+    padding: 1em;
+}
+
+
+
+nav {
+    background-color: var(--accent1-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--accent2-color);
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--accent2-color);
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+    background-color: var(--secondary-color);
+}
+
+p.colored {
+    color: var(--secondary-color);
+}
+
+p.heading {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3 {
+    color: var(--secondary-color);
+}

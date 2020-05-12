@@ -36,7 +36,7 @@ header {
   background-color: var(--accent2-color);
 }
 header > h1 {
-  color: #54494b;
+  color: #54494b
 }
 p {
   font-family: 'Roboto-Slab', serif;
