@@ -7,6 +7,11 @@
     --paragraph-family: 'Roboto Slab', serif;
     --heading-font-color: #B33951;
 }
+@media screen and (max-width: 550px) {
+    .______ {
+      display: block;
+    }
+  }
 
 html {
     background-color: #91C7B1;
@@ -15,12 +20,13 @@ html {
 body {
     max-width: 960px;
     margin: 0px auto;
-    padding: 1em;
+    
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
     background-color: #F1F7ED;
 
 }
+
 
 header,
 main,
@@ -28,12 +34,14 @@ footer,
 .hero-image {
     max-width: 960px;
     margin: 0 auto;
+    padding:0; 
+
 }
 
 
 
+
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -45,43 +53,87 @@ h6 {
 
 header {
     text-align: center;
-    color: var(--secondary-color);
-    background-color: #91C7B1;
+    color: #B33951;
+    background-color: #F1F7ED;
     display: flex;
-    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 20px; 
     align-items: center;
     justify-content: space-evenly; 
+    grid-gap: 20px; 
+}
+
+.banner-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.banner-box img {
+    grid-column: 1 / -1; /* the -1 is just a fancy way to say "span all the columns" */
+    grid-row: 1;
+}
+
+.action button {
+    line-height: 2em;
+    width: 10em;
+    background-color:#F1F7ED;
+    font-size: 1.2em;
+}
+.action {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: rgba(240, 240, 240, 0.8);
+    margin: 1em 3em;
+    padding: 1em;
+    text-align: center;
+}
+ 
+img#logo {
+    max-width: auto;
+    height: 50px;
+    padding-right: 10px;
 }
 
 header>h1 {
     color: #54494b;
     font-size: 1.5rem;
+    
 }
 
 
-nav {
-    background-color: #91C7B1;
+ nav {
+    background-color:#F1F7ED; 
     line-height: 3em;
     text-align: center;
     font-size: 1.2rem;
-    color: var(--accent2-color);
+     
+ }
 
-}
 
 nav>ul {
+     
     list-style-type: none;
-    display: flex;
+    display:flex; 
     flex: 1 1 auto;
+    grid-column: 2/4; 
+      
 }
-
+a{ 
+    color: #B33951; 
+}
 nav a {
     padding: 1em;
     min-width: 70px;
+    color: #54494b;
+
+}
+nav a:link{
+    color: #B33951; 
 }
 
-nav a:link,
+
 nav a:visited {
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 nav a:hover {
@@ -89,26 +141,34 @@ nav a:hover {
     background-color: var(--secondary-color);
 }
 
-main .hero-image {
-    margin-bottom: 25px;
+main { 
+    width: 960px;  
+    margin: 0px; 
 }
 
-img#logo {
-    max-width: auto;
-    height: 50px;
-    padding-right: 10px;
+
+div.wrapper { 
+    width: 850px; 
+    margin: 0 auto; 
+    justify-items: center;
+   
 }
-main .section-one,
-.section-two {
-    display: flex;
-    justify-content: space-evenly;
+
+main .section-one {
     margin: 30px auto;
-}
-main .section-one div, .section-two div { 
-    width: 45%; 
-    margin: 20px; 
+    align-items: center; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px; 
 }
 
+main .section-two { 
+    margin: 30px auto;
+    align-items: center; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-gap: 25px;  
+}
 
 p {
     font-family: 'Roboto-Slab', serif;
@@ -118,13 +178,53 @@ p {
     background-color: #F1F7ED;
 }
 
-h2.search {
-    padding-top: 25px;
-    text-align: center;
+div.home{ 
+    width: 300px; 
+    display: grid; 
+    grid-column: 0/1; 
+    margin-right: 10px; 
+    
 }
 
+
+p.first  { 
+    width: 300px;
+    margin-left: 50px; 
+
+}
+.image1{ 
+    margin-left: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999; 
+}
+div.wed{ 
+    width: 300px; 
+    display: grid; 
+    grid-column: 0/1; 
+    margin-right: 25px; 
+    justify-content: center; 
+    margin-left: 50px; 
+}
+.image2 { 
+    margin-left: 50px; 
+    display: grid; 
+    grid-column: 1/2; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #999;
+}
+h2.one{ 
+    margin-left: 50px; 
+}
+h2.two{ 
+    padding: 16px; 
+}
+h2.search { 
+    text-align: center; 
+}
 div.family p {
-    max-width: 100%;
+    grid-column: 100% ;
 }
 
 p.colored {
@@ -133,11 +233,6 @@ p.colored {
 
 p.heading {
     font-family: 'Montserrat', sans-serif;
-}
-
-p.copyright {
-    max-width: 100%;
-    text-align: center;
 }
 
 h2,
@@ -149,9 +244,15 @@ footer .footer {
     display: flex;
     justify-content: space-evenly;
     padding: 25px 0;
-    background-color: #91C7B1;
+    background-color: #F1F7ED; 
     margin-top: 25px;
+    border-top: 5px solid #54494b;
 }
+p.copyright {
+    max-width: 100%;
+    text-align: center;
+}
+
 li { 
     list-style: none; 
 }
