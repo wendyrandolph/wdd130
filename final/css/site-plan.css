@@ -87,6 +87,7 @@ p.heading {
     text-align: center;
     font-size: 1.2em;
     color: var(--primary-color);
+    font-family: 'Lato' sans-serif; 
   }
   nav > ul {
     list-style-type: none;
@@ -103,4 +104,8 @@ p.heading {
   nav a:hover {
     color: var(--secondary-color);
     background-color:var(--accent2-color) ;
+  }
+  footer{ 
+      border-top: 5px solid var(--primary-color);
+      text-align: center; 
   }
