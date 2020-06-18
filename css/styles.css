@@ -25,6 +25,10 @@ a:hover{
 }
 ul{ 
     padding: 0;
+     
+}
+ul.second { 
+    margin-left: 150px; 
 }
 li { 
     list-style: none;
@@ -32,6 +36,12 @@ li {
     color: black;
     padding: 0; 
     
+}
+ol{ 
+    margin: 25px; 
+}
+a { 
+    margin: 50px; 
 }
 h1{ 
     text-align: center;
