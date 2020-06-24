@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content=" A site to help young families or those
+    traveling with a great place to sleep while attending an LDS temple and have
+    available childcare for those in need of it. " />
+  <title>
+    "Temple Inn & Suites | Reservations | 123-456-7890"
+  </title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&display=swap");
+  </style>
+</head>
+
+<body>
+  
+  <header class="header1">
+    <img src="images/icon.png" id="logo" alt="company logo" />
+    <h1>Temple Inn & Suites</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="ammenities.html">Ammenities</a></li>
+        <li><a href="mytemple.html"> Temple Spotlight</a></li>
+        <li><a href="#">Reservations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+   
+      
+    
+   
+
+  <div class="bg-img"> 
+    <section class="section-six">
+        
+        
+      
+        
+          <div id="feedback"></div>
+        <form action="/my-handling-form-page" method="post" class="container">
+            <h2 class="six">Reservations</h2>
+           
+            <ul>
+             <li>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="user_name">
+             </li>
+             <li>
+               <label for="mail">E-mail:</label>
+               <input type="email" id="mail" name="user_email">
+             </li>
+             <li>
+               <label for="msg">Message:</label>
+               <textarea id="msg" name="user_message" placeholder="Type your message here"></textarea>
+             </li>
+             <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+            </ul>
+           </form>
+        
+           
+       
+        </section> 
+    </div>
+     
+        </main>
+           <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById('feedback');
+            // get the form element so we can read what was entered in it.
+            const formElement = document.forms[0];
+            
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener('submit', function(e) {
+              // stop the form from doing the default action
+              e.preventDefault();
+              // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+              feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+              // make the feedback element visible.
+              feedbackElement.style.display = "block";
+            });
+          </script>
+       
+
+   
+  
+
+  <footer>
+    <div class="footer">
+      <ul>
+        <li>📍 Temple Inn & Suites Headquarters</li>
+        <li>355 Wisconsin Avenue</li>
+        <li>Bethesda, MD 20814</li>
+        <li>📞 215-829-9999</li>
+        <li>📧 info@templeinn.com</li>
+      </ul>
+      
+      <div class="social">
+       
+          <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook Icon" /></a>
+          <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram Icon" /></a>
+          <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter Icon" /></a>
+       
+
+      </div>
+    </div>
+    <p class="copyright">
+      Copyright © 2020 Temple Inn & Suites | All Rights Reserved | Privacy
+      and Cookie Statement | Wendy Randolph
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
