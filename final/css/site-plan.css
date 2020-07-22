@@ -33,15 +33,17 @@ h1, div.signature {
 }
 
 h2, h3, h4 { 
-    margin-left: 50px; 
+    margin-left: 10px; 
     font-family: 'Oswald', sans-serif;
     color: #754F5B;
 }
 
 p { 
-    margin-left: 50px; 
+  margin: 0 auto; 
+
     font-family: 'Lato', sans-serif;
     font-weight: 150;
+  
 }
 .colors {
     width: 100%;

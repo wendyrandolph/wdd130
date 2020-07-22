@@ -1,51 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List of Helpful Books</title>
-    <link rel="stylesheet" href="css/styles.css"> 
-    <style>
-        @import "https://fonts.googleapis.com/css?family=Oswald:Medium400|Lato";
-      </style>
-</head>
-<body>
-    
-        <header>
-            <img
-              src="images/iconfinder_heart_811480.png"
-              alt=" Widow Life 101 Logo"
-            />
-            <h1>Widowed Life 101</h1>
-            <nav>
-              <ul>
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="quotes.html"> Helpful Quotes</a></li>
-                <li><a href="#">Resources</a></li>
-              </ul>
-            </nav>
-          </header>
-          <main> 
-             
-          </main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" A site to help young families or those
+    traveling with a great place to sleep while attending an LDS temple and have
+    available childcare for those in need of it. "
+    />
+    <title>Other Resources</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-          <footer>
-            <p class="copyright">
-              Copyright © 2020 Widowed Life 101 | All Rights Reserved | Privacy and
-              Cookie Statement | Wendy Randolph
-            </p>
-            <div class="social">
-              <a href="https://www.facebook.com"
-                ><img src="images/facebook.png" alt="Facebook Icon" class="facebook"
-              /></a>
-              <a href="https://www.instagram.com"
-                ><img src="images/instagram.png" alt="Instagram Icon" class="insta"
-              /></a>
-              <a href="https://www.twitter.com"
-                ><img src="images/twitter.png" alt="Twitter Icon" class="twitter"
-              /></a>
-            </div>
-          </footer>
-</body>
+    <style>
+      @import "https://fonts.googleapis.com/css?family=Oswald:Medium400|Lato";
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="images/iconfinder_heart_811480.png"
+        alt=" Widowed Life 101 Logo"
+        class="logo"
+      />
+      <h1>Widowed Life 101</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Adult Books</a></li>
+        <li><a href="childrenbooks.html">Children's Books</a></li>
+        <li><a href="quotes.html"> Helpful Quotes</a></li>
+        <li><a href="#">Resources</a></li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="provo">
+        <h2>LDS W/W Conferences</h2>
+        <p class="financial">
+          Every year hundreds of widows and widowers gather for a conference to
+          attend classes on a wide variety of topics related to the loss of a
+          spouse, grief, finances, even dating, and remarriage and blending
+          families. The classes change from year to year and the content is
+          helpful in whatever stage you might be in. This last year due to
+          covid-19 we held a virtual conference instead. Here are links to
+          YouTube Videos for the audio of:
+        </p>
+
+        <div class="video">
+          <ul class="video1">
+            <li>
+              <a href=" https://youtu.be/UMt6xT0Px6" class="allen"
+                >Kent Allen on Grief</a
+              >
+            </li>
+
+            <li>
+              <a href="https://youtu.be/PHaYNELRoEo" class="allen1">
+                Dating Do's And Don'ts by Kent Allen</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=evPaLH_kT4A&feature=youtu.be&fbclid=IwAR2WNPBQYo-VSA2Wc5iUTrColUYkPo9NLBnqiOaqrqZCJPpMVP5KTPg4trY"
+                class="kane"
+                >Christy Kane - The Importance of Connection
+              </a>
+            </li>
+          </ul>
+
+          <img
+            src="images/group.jpg"
+            class="group"
+            alt="group photo of conference presenters, Kent Allen, Christy Kane, and two others"
+          />
+        </div>
+
+        <div class="financial">
+          <a href=" https://wwministeringangels.org/" class="financial">
+            LDS W/W Ministering Angels</a
+          >
+          <p class="financial">
+            If you are a widow or widower in need of financial assistance you
+            can apply for help through this link. You can also donate to this
+            organization to help out those in need who find themselves in an
+            upside down world and sometimes in a precarious situation
+            financially.
+          </p>
+        </div>
+        <div class="feedback">
+          <div id="feedback"></div>
+          <form action="/my-handling-form-page" method="post">
+            <h3 class="formfeedback">
+              If you have questions and would like someone to reach out to you
+              please fill this out.
+            </h3>
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea
+                  id="msg"
+                  name="user_message"
+                  placeholder="Type your message here"
+                ></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="social">
+        <a href="https://www.facebook.com"
+          ><img src="images/facebook.png" alt="Facebook Icon" class="facebook"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="images/instagram.png" alt="Instagram Icon" class="insta"
+        /></a>
+        <a href="https://www.twitter.com"
+          ><img src="images/twitter.png" alt="Twitter Icon" class="twitter"
+        /></a>
+      </div>
+      <p class="copyright">
+        Copyright © 2020 Widowed Life 101 | All Rights Reserved | Privacy and
+        Cookie Statement | Wendy Randolph
+      </p>
+    </footer>
+    <script>
+      // get the feedback div element so we can do something with it.
+      const feedbackElement = document.getElementById("feedback");
+      // get the form element so we can read what was entered in it.
+      const formElement = document.forms[0];
+
+      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+      formElement.addEventListener("submit", function (e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML =
+          "Hello " +
+          formElement.user_name.value +
+          "! Thank you for your message. We will get back with you as soon as possible!";
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+      });
+    </script>
+  </body>
 </html>
